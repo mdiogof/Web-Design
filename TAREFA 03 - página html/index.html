@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--etapa 1-->
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
-        <title>Tarefa 03</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Tarefa 03</title> <!--nome da página (aba de pesquisa)-->
+        <link rel="stylesheet" href="style.css"> <!--importa o arquivo style.css-->
 
     </head>
     <body>
-        <header>
+        <header> <!--cabeçalho da página (estapa 2)-->
             <h1 align="center">Título principal (H1) - centralizado</h1>
             <h2 align="left">Subtítulo (H2) - alinhado à esquerda</h2>
             <h3 align="right">Seção (H3) - alinhado à direita</h3>
@@ -15,12 +15,12 @@
             <h5>Detalhe (H5)</h5>
             <h6>Nota (H6)</h6>
         </header>
-        <nav>
+        <nav> <!--menu de navegação interna, por id (etapa 3)-->
             <p><a href="#posts">Posts</a> | <a href="#lateral">Lateral</a> | 
                 <a href="#rodape">Rodapé</a></p>
         </nav>
-        <section id="posts">
-            <article class="post">
+        <section id="posts"> <!--etapa 4 e 5-->
+            <article class="post"> <!--parte independente e autocontida-->
                 <header>
                     <h2>Meu Blog - Primeiro Post</h2>
                 </header>
@@ -29,20 +29,20 @@
                     <span class="riscado">riscado</span>, além de exemplos de 
                     <sub>subscrito</sub> e <sup>sobrescrito</sup>.</p>
             </article>
-            <p>Exemplo de texto <span style="color:blue; font-size:20px">texto estilizado</span> <!--CSS inline-->
+            <p>Exemplo de texto <span style="color:blue; font-size:20px">texto estilizado</span> <!--CSS inline (estapa 6)-->
                  (substituindo a tag &lt;font&gt; obsoleta).</p> <!--Os símbolos usados ao redor de font são ENTIDADES HTML, responsáveis pelos símbolos < e >-->
-            <div class="center">
+            <div class="center"> <!--cria bloco genérico que pode ser editado (etapa 7)-->
                 Este texto está centralizado (substituindo &lt;center&gt;).
             </div>
-            <p style="text-align: justify;">Parágrafo justificado para demonstrar alinhamento.<br>
+            <p style="text-align: justify;">Parágrafo justificado para demonstrar alinhamento.<br> <!--CSS inline para kustificar texto (etapa 8)-->
                 Esta é a linha seguinte após &lt;br/&gt;.</p>
         </section>
-        <aside id="lateral">
+        <aside id="lateral"> <!--marca conteúdo complementar e informações extras (etapa 9)-->
             <h3>Conteúdo Relacionado</h3>
             <p>Links, anúncios, ou notas que não fazem parte do fluxo principal do artigo.</p>
         </aside>
-        <footer id="rodape">
+        <footer id="rodape"> <!--estilizado pelo CSS via id (etapa 10)-->
             <p>© 2025 - Exemplo didático de HTML da Aula 03</p>
         </footer>
     </body>
-</html>
+</html> <!--etapa 11: comentários-->

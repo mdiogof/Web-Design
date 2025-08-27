@@ -11,8 +11,8 @@ body, head {
     text-align: center;
 }
 #rodape {
-    text-align: center;         /* centraliza o texto */
-    font-size: 14px;            /* tamanho do texto */
-    color: #555;                /* cor cinza discreta */
-    margin-top: 40px;           /* espaço acima do footer */
+    text-align: center;
+    font-size: 14px;
+    color: #555; 
+    margin-top: 40px;     /* espaço acima do footer */
 }
