@@ -1,3 +1,6 @@
+body, head {
+  font-family: Arial, sans-serif;
+}
 .sublinhado {
   text-decoration: underline;
 }
@@ -6,4 +9,10 @@
 }
 .center {
     text-align: center;
+}
+#rodape {
+    text-align: center;         /* centraliza o texto */
+    font-size: 14px;            /* tamanho do texto */
+    color: #555;                /* cor cinza discreta */
+    margin-top: 40px;           /* espaço acima do footer */
 }
