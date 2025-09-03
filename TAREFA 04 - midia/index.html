@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mídias</title>
+    <link rel="stylesheet" href="style.css"> <!--importa o arquivo style.css-->
+</head>
+<body>
+    <header>
+        <h2>Aula 04 - Mídias em HTML</h2>
+    </header>
+    <main>
+        <div id="imagens">
+        <p>Imagens</p>
+        <p>Imagem 1</p>
+        <img src="espetinho.png" alt="imagem da barraquinha de espetinho com nome 'churrasquinho do zé'">
+        <p>Imagem 2</p>
+        <img src="pizza.png" alt="imagem do Mario (Mario Bros) segurando uma pizza">
+        <p>Imagem 3</p>
+        <img src="lasanha.png" alt="imagem de uma lasanha de bala de goma com cobertura de sorvete">
+        </div>
+
+        <div id="video">
+            <p>Vídeo</p>
+            <video src="mario-entregador.mp4" controls>Mario do mario bros indo entregar uma pizza</video>
+        </div>
+
+        <div id="audio">
+        <p>Áudio</p>
+        <audio controls>
+            <source src="descricao-mario.mp3" type="audio/mpeg">
+            <source src="descricao-mario.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio
+        </audio>
+        </div>
+
+        <div id="formulario">
+        <p>Formulário</p>
+        <form action="processar.php" method="post">
+            <label for="nome">Nome: <br></label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">E-mail: <br></label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensagem">Mensagem: <br></label>
+            <textarea id="mensagem" name="mensagem"></textarea><br><br>
+            <input type="submit" id="botao" value="Enviar"><br><br>
+        </form>
+        </div>
+
+        <div id="links">
+        <p>Links</p>
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.google.com"> <img src="google.png" alt="Imagem da logo da Google"></a><br>
+        <a href="https://www.google.com" target="_blank">Google - nova aba</a><br>
+        </div>
+
+        <div id="listas">
+        <p>Listas</p>
+        <ol>
+            <li>Passo 1</li>
+            <li>Passo 2</li>
+            <li>Passo 3</li>
+        </ol>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+        </div>
+
+        <div id="tabelas">
+        <p>Tabelas</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cabeçalho 1</th>
+                    <th>Cabeçalho 2</th>
+                    <th>Cabeçalho 3</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                    <td>Dado 3</td>
+                </tr>
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                    <td>Dado 3</td>
+                </tr>
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                    <td>Dado 3</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div id="identificadores">
+        <p>Identificadores e Classes</p>
+        <p id="introducao">Parágrafo com <b>id</b></p><br>
+        <p class="destaque">Parágrafo destacado 1</p>
+        <p class="destaque">Parágrafo destacado 2</p>
+
+        <div class="container">
+            <h3>Div Contâiner</h3>
+            <hr>
+            <p>Parágrafo explicativo 1</p>
+            <p>Parágrafo explicativo 2</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 - Exemplo didático de HTML da Aula 04</p>
+    </footer>
+</body>
+</html>
