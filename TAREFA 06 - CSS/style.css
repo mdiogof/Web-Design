@@ -1,0 +1,242 @@
+/* ==================== RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* ==================== CABEÇALHO ==================== */
+#cabecalho-principal {
+    background: linear-gradient(90deg, #26305c, #1c1f4a);
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#cabecalho-principal h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ==================== CONTAINERS ==================== */
+.container {
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+.destaque {
+    border-left: 6px solid #007BFF;
+    padding-left: 20px;
+}
+
+/* ==================== SEÇÕES ==================== */
+h2 {
+    font-size: 1.9rem;
+    color: #26305c;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+p, li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ==================== LISTAS ==================== */
+ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 8px;
+}
+
+/* ==================== GRID DE PROJETOS ==================== */
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ==================== GALERIA ==================== */
+.galeria, .galeria a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.galeria img, .galeria video {
+    border-radius: 10px;
+    width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.galeria img:hover, .galeria video:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ==================== BLOG POSTS ==================== */
+.post {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.post h3 {
+    color: #26305c;
+    margin-bottom: 8px;
+}
+.post h4 {
+    color: #007BFF;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.post p {
+    margin-bottom: 10px;
+}
+.post pre {
+    background: #f0f0f0;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* ==================== FORMULÁRIO ==================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* ==================== BOTÕES ==================== */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.botao-primario {
+    background-color: #007BFF;
+    color: white;
+}
+.botao-primario:hover {
+    background-color: #0056b3;
+}
+.botao-secundario {
+    background-color: #28a745;
+    color: white;
+}
+.botao-secundario:hover {
+    background-color: #1e7e34;
+}
+
+/* ==================== RODAPÉ ==================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #26305c;
+    color: white;
+    margin-top: 30px;
+    border-top: 3px solid #007BFF;
+}
+
+/* ==================== ANIMAÇÕES ==================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 1024px) {
+    .galeria img, .galeria video {
+        width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    .galeria img, .galeria video {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
